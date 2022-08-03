@@ -4,20 +4,53 @@ using namespace std;
 
 struct stu
 {
-	int roll;
-	string name[20];
+	int roll=12;
+	char name[10]="harry";
 };
+
 int main()
 {
-	struct stu *p;
-	p=(struct stu *)malloc(sizeof(struct stu));
-//	p->roll=10;
-	p->name = {'harry'};
-	
-	cout<<p->roll<<endl<<p->name;
+	stu s;
+	stu *p=&s;
+	cout<<p->roll<<endl;
+	cout<<p->name<<endl;
+	return 0;	
+}
+
+
+Output of the program :
+
+12
+harry
+
+-===========================================structure to poiter===============================
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+struct laptop
+{
+	int price=100000;
+	int model=2012;
+// 	char name[30]="macbook 7 pro";
+};
+
+int main()
+{
+	struct laptop *p;
+	p=(struct laptop*)malloc(sizeof(struct laptop));
+// 	p=new laptop;
+
+    p->price=100000;
+    p->model=2015;
+    // p->name='Dell';
+	cout<<p->price<<endl;
+	cout<<p->model<<endl;
+// 	cout<<p->name<<endl;
 	return 0;	
 }
 
 Output of the program :
-10
-	this is no program is right
+
+100000
+2015
