@@ -1,18 +1,23 @@
 #include<iostream>
+#include<stdlib.h>
 using namespace std;
 
-struct student 
+struct stu
 {
-	int roll =12;
-	char name[10];
+	int roll;
+	string name[20];
 };
 int main()
-
 {
-	struct student s={12,'mindedCode'
-	};
-	struct student *p = &s;
-	r.
-	cout<<r<<endl;
-	cout<<a<<endl;
+	struct stu *p;
+	p=(struct stu *)malloc(sizeof(struct stu));
+//	p->roll=10;
+	p->name = {'harry'};
+	
+	cout<<p->roll<<endl<<p->name;
+	return 0;	
 }
+
+Output of the program :
+10
+	this is no program is right
