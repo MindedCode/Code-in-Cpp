@@ -12,13 +12,17 @@ int main()
 	cin>>length>>breadth;
 //	cout<<length*breadth;
 	int area = breadth*length;
-	cout<<area;
+	int peri = 2*(breadth+length);
+	cout<<"area : "<<area<<endl;
+	cout<<"perimeter : "<<peri;
 	
-	
+	return 0;
 }
 
 output::
 Enter the area of length and breath
 12
-12
-144
+3
+area : 36
+perimeter : 30
+
